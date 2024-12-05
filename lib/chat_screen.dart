@@ -38,7 +38,13 @@ class _ChatScreenState extends State<ChatScreen> {
           appBar: AppBar(
             backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
             centerTitle: true,
-            title: const Text("Doxa"),
+            title: const Text(
+              "Doxa",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+              ),
+            ),
             actions: [
               IconButton(
                 onPressed: () async {
@@ -75,8 +81,8 @@ class _ChatScreenState extends State<ChatScreen> {
                 },
                 icon: Icon(
                   Icons.add_circle_outlined,
-                  color: Theme.of(context).colorScheme.surfaceVariant,
-                  size: 43,
+                  // color: Theme.of(context).colorScheme.surfaceVariant,
+                  size: 45,
                 ),
               ),
             ],

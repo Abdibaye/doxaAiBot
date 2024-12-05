@@ -148,6 +148,10 @@ class ChatProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  ChatProvider() {
+    _loadChatHistory(); // Load chats when the provider is created
+  }
+
   List<ChatHistory> _chatHistory = []; // Store chat history
 
   // Getter for chat history
