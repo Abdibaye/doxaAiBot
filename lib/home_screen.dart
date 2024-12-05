@@ -14,8 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final PageController _pageController = PageController();
 
   final List<Widget> _screen = [
-    const ChatScreen(),
     const ChatHistoryScreen(),
+    const ChatScreen(),
     const ProfileScreen(),
   ];
 
